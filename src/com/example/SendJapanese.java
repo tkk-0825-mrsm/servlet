@@ -15,11 +15,11 @@ public class SendJapanese extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.setCharacterEncoding("UTF-8");
-        response.setContentType("text/html;charset=UTF-8");
+        request.setCharacterEncoding("Shift-JIS");
+        response.setContentType("text/html;charset=Shift-JIS");
         PrintWriter out = response.getWriter();
         out.println("<!DOCTYPE html></html>");
-        out.println("<head><meta charset='UTF-8' /></head>");
+        out.println("<head><meta charset='Shift-JIS' /></head>");
         out.println("<title>sendJapanese</title>");
         out.println("</head>");
         out.println("<body>");
