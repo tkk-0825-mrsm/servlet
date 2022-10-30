@@ -14,7 +14,8 @@ public class ColorServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         System.out.println("リクエストURL=" + request.getRequestURL());
-        System.out.println("リクエストURI=" + request.getRequestURI());
+        System.out.
+        println("リクエストURI=" + request.getRequestURI());
         System.out.println("Servletパス=" + request.getServletPath());    
         String pathInfo = request.getPathInfo();
         System.out.println("拡張パス=" + pathInfo);

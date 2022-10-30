@@ -21,21 +21,23 @@ class SampleTest {
 			assertEquals("青", Sample.getColor(3));
 		}
 		@Test
-		void fail() {
-			List<Object> it = new ArrayList<>();
-			assertThrows(IndexOutOfBoundsException.class, () -> it.get(1));
+		void exceptionTesting() {
+			List<Object> Sample.getColor= new ArrayList<>();
+			assertThrows(IllegalArgumentException.class, () -> Sample.getColor(1));
 		}
-		}
-
 		@Test
-		@DisplayName("引数エラー")
-		void fail() {
-		
-			try {
-				Sample.getColor(99);
-				fail();
-			} catch (IllegalArgumentException e) {
-			}
+        @DisplayName("引数エラー")
+        void fail() {
+            try {
+                Sample.getColor(99);
+                fail();
+            } catch (IllegalArgumentException e) {
+            }
+        }
+        }
 		}
-	}
+		
+
+		
+	
 
