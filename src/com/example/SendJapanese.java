@@ -25,7 +25,7 @@ public class SendJapanese extends HttpServlet {
         out.println("<body>");
         out.print("<p>");
         out.print(request.getParameter("lastName"));
-        out.print("");
+        out.print("");
         out.print(request.getParameter("firstName"));
         out.print("さん、こんにちは。");
         out.print("</p>");
