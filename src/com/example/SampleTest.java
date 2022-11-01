@@ -21,9 +21,9 @@ class SampleTest {
 			assertEquals("青", Sample.getColor(3));
 		}
 		@Test
-		void exceptionTesting() {
-			List<Object> Sample.getColor= new ArrayList<>();
-			assertThrows(IllegalArgumentException.class, () -> Sample.getColor(1));
+		@DisplayName("引数エラー")
+		void fail2() {
+			assertThrows(IllegalArgumentException.class, () -> Sample.getColor(99));
 		}
 		@Test
         @DisplayName("引数エラー")
